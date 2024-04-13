@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211435908823",
+    "project_id": "scanlycard-db551",
+    "storage_bucket": "scanlycard-db551.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211435908823:android:07f9cd7fad234c9763ca92",
+        "android_client_info": {
+          "package_name": "com.trycatch_tanmay.scanlycard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs5don-Z5UqOKcpN8OxyFDvrGdbBt1Mz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

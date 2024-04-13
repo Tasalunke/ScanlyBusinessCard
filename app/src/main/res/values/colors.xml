@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#A367B1</color>
+    <color name="purple_500">#5D3587</color>
+    <color name="purple_700">#392467</color>
+    <color name="gradient">#F9FCFF</color>
+    <color name="purple">#711DB0 </color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="whitegrey">#E5E1DA</color>
+    <color name="Ligthwhite">#D2D2D2 </color>
+    <color name="top_colour">#cf95f5 </color>
+    <color name="top2_colour">#7b02fa </color>
+    <color name="prf"> #7e08fa</color>
+</resources>

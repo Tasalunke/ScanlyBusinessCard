@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Question TextView -->
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="What is the capital of France?"
+            android:textSize="18sp"/>
+
+        <!-- RadioGroup for Options -->
+        <RadioGroup
+            android:id="@+id/optionsRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp">
+
+            <!-- Option 1 RadioButton -->
+            <RadioButton
+                android:id="@+id/option1RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A. Paris"/>
+
+            <!-- Option 2 RadioButton -->
+            <RadioButton
+                android:id="@+id/option2RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B. Berlin"/>
+
+            <!-- Option 3 RadioButton -->
+            <RadioButton
+                android:id="@+id/option3RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C. London"/>
+        </RadioGroup>
+
+        <!-- Correct Answer TextView -->
+        <TextView
+            android:id="@+id/correctAnswerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Correct Answer: A. Paris"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

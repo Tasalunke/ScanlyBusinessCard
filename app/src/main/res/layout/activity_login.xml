@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trycatch_tanmay.scanlycard.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="300dp"
+        android:src="@drawable/logintxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/login"
+        app:layout_constraintTop_toBottomOf="@+id/login_txt" />
+
+    <EditText
+        android:id="@+id/edit_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableRight="@drawable/eye"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edit_txt" />
+
+
+
+    <CheckBox
+        android:id="@+id/remember_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    <TextView
+        android:id="@+id/rember_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Remember Me"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    <TextView
+        android:id="@+id/forgt_psswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:text="Forget Password?"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_login"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+<TextView
+    android:id="@+id/option_txt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="OR CONNECT WITH "
+    app:layout_constraintTop_toBottomOf="@+id/Btn_login"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:gravity="center"
+    android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/facebook_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toStartOf="@+id/google_image"
+        app:layout_constraintTop_toBottomOf="@+id/option_txt" />
+
+    <ImageView
+        android:id="@+id/google_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/google"
+        app:layout_constraintTop_toBottomOf="@+id/option_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-50dp"/>
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-in With Us "
+        app:layout_constraintTop_toBottomOf="@+id/facebook_image"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Terms and condition"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
